@@ -5,4 +5,8 @@
     <RootNamespace>Thoughtlab.Piranha.Extend</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Piranha" Version="7.0.3" />
+  </ItemGroup>
+
 </Project>
