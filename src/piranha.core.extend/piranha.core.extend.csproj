@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Thoughtlab.Piranha.Extend</RootNamespace>
   </PropertyGroup>
 
 </Project>
