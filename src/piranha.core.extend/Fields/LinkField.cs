@@ -1,8 +1,5 @@
 ﻿using Piranha.Extend;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace Thoughtlab.Piranha.Extend.Fields
 {
@@ -36,6 +33,10 @@ namespace Thoughtlab.Piranha.Extend.Fields
 			}
 		}
 
+		/// <summary>
+		/// Gets the list item title if this field is used in
+		/// a collection regions.
+		/// </summary>
 		string IField.GetTitle()
 		{
 			return Text;

@@ -1,5 +1,4 @@
 ﻿using Piranha.Extend;
-using Piranha.Extend.Fields;
 using System;
 
 namespace Thoughtlab.Piranha.Extend.Fields
@@ -29,6 +28,10 @@ namespace Thoughtlab.Piranha.Extend.Fields
 			return Value == obj.Value && HeadingLevel == obj.HeadingLevel;
 		}
 
+		/// <summary>
+		/// Gets the list item title if this field is used in
+		/// a collection regions.
+		/// </summary>
 		public string GetTitle()
 		{
 			return Value;
