@@ -1,0 +1,31 @@
+@model StartPage
+@inject IApi Api
+
+@{
+	ViewBag.Title = Model.Title;
+	//ViewBag.HasImage = Model.Hero.BackgroundImage.HasValue;
+
+	//string BackgroundImage() {
+	//    if (Model.Hero.BackgroundImage.HasValue) {
+	//        return $"style=background-image:url({Url.Content(Model.Hero.BackgroundImage)})";
+	//    }
+	//    return "";
+	//}
+}
+
+<header class="page-header">
+    <div class="container">
+        <div class="row">
+			<div class="col-sm-9">
+				@*<h1>@Model.Hero.Title</h1>
+				<p class="title">
+					@Model.Hero.Subtitle
+				</p>*@
+			</div>
+        </div>
+    </div>
+</header>
+
+<main>
+	@Html.DisplayFor(m => m.Blocks)
+</main>

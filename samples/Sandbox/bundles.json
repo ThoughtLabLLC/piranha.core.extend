@@ -1,0 +1,22 @@
+[
+	{
+		"outputFileName": "js/manager.js",
+		"inputFiles": [
+			"scripts/manager/*.ts",
+			"scripts/manager/complex-block.js"
+		],
+		"minify": {
+			"enabled": true,
+			"renameLocals": true
+		}
+	},
+	{
+		"outputFileName": "css/site.css",
+		"inputFiles": [
+			"styles/global/*.scss"
+		],
+		"minify": {
+			"enabled": true
+		}
+	}
+]

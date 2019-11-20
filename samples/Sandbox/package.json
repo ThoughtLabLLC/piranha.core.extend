@@ -1,0 +1,41 @@
+{
+	"version": "1.0.0",
+	"name": "asp.net",
+	"private": true,
+	"devDependencies": {
+		"@types/bootstrap": "^4.3.0",
+		"@types/jquery": "^3.3.29",
+		"@types/vue": "^2.0.0",
+		"autoprefixer": "^9.6.0",
+		"bootstrap": "4.3.1",
+		"del": "^3.0.0",
+		"gulp": "^3.9.1",
+		"gulp-clean-css": "^3.9.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-imagemin": "^4.1.0",
+		"gulp-plumber": "^1.2.0",
+		"gulp-postcss": "^7.0.1",
+		"gulp-rename": "^1.2.2",
+		"gulp-rollup": "^2.16.2",
+		"gulp-sass": "^3.1.0",
+		"gulp-typescript": "^4.0.2",
+		"gulp-uglify": "^3.0.0",
+		"jquery": "3.4.1",
+		"merge-stream": "^1.0.1",
+		"require-dir": "^1.0.0",
+		"typescript": "^2.8.3",
+		"vue": "^2.6.10"
+	},
+	"browserslist": [
+		"last 1 major version",
+		">= 1%",
+		"Chrome >= 45",
+		"Firefox >= 38",
+		"Edge >= 12",
+		"Explorer >= 11",
+		"iOS >= 9",
+		"Safari >= 9",
+		"Android >= 4.4",
+		"Opera >= 30"
+	]
+}

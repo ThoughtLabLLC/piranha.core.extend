@@ -1,7 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\src\js\components\fields\code-field.js" />
+    <None Remove="assets\src\js\components\fields\color-field.js" />
+    <None Remove="assets\src\js\components\fields\heading-field.js" />
+    <None Remove="assets\src\js\components\fields\link-field.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="assets\src\js\components\fields\code-field.js" />
+    <EmbeddedResource Include="assets\src\js\components\fields\color-field.js" />
+    <EmbeddedResource Include="assets\src\js\components\fields\heading-field.js" />
+    <EmbeddedResource Include="assets\src\js\components\fields\link-field.js" />
+  </ItemGroup>
 
 </Project>
