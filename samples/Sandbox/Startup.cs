@@ -49,15 +49,6 @@ namespace PiranhaCMSTest
 			App.Blocks.Register<ImageGallery>();
 			App.Blocks.Register<Hero>();
 
-			// Configure custom resources
-			App.Modules.Get<Piranha.Manager.Module>().Scripts.Add("~/manager/extend/js/components/fields/heading-field.js");
-
-			app.UseStaticFiles(new StaticFileOptions
-			{
-				FileProvider = new EmbeddedFileProvider(typeof(MarkerService).Assembly, "piranha.manager.extend.assets.src"),
-				RequestPath = "/manager/extend"
-			});
-
 			// Build content types
 			var pageTypeBuilder = new Piranha.AttributeBuilder.PageTypeBuilder(api)
 				.AddType(typeof(Models.BlogArchive))
@@ -83,6 +74,7 @@ namespace PiranhaCMSTest
 			app.UseAuthentication();
 			app.UsePiranha();
 			app.UsePiranhaManager();
+			app.UseExtendedManager();
 			app.UseMvc(routes =>
 			{
 				routes.MapRoute(name: "areaRoute",

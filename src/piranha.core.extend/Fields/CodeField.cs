@@ -1,40 +1,31 @@
 ﻿using Piranha.Extend;
-using Piranha.Extend.Fields;
+using System;
 
 namespace Thoughtlab.Piranha.Extend.Fields
 {
-	[FieldType(Name = "Raw Code", Shorthand = "Code", Component = "code-field")]
-	public class CodeField : SimpleField<string>
+	[FieldType(Name = FieldName, Shorthand = "Code", Component = "code-field")]
+	public class CodeField : IField, IEquatable<CodeField>
 	{
-		/// <summary>
-		/// Implicit operator for converting a string to a field.
-		/// </summary>
-		/// <param name="str">The string value</param>
-		public static implicit operator CodeField(string str)
-		{
-			return new CodeField { Value = str };
-		}
+		private const string FieldName = "Raw Code";
+
+		public string Html { get; set; }
+
+		public string Css { get; set; }
 
 		/// <summary>
-		/// Implicitly converts the Text field to a string.
+		/// Gets the list item title if this field is used in
+		/// a collection regions.
 		/// </summary>
-		/// <param name="field">The field</param>
-		public static implicit operator string(CodeField field)
-		{
-			return field.Value;
-		}
+		public string GetTitle() => FieldName;
 
-		/// <summary>
-        /// Gets the list item title if this field is used in
-        /// a collection regions.
-        /// </summary>
-        public override string GetTitle()
-        {
-            if (Value != null)
-            {
-                return Value.Length > 40 ? Value.Substring(0, 40) + "..." : Value;
-            }
-            return null;
-        }
+		public bool Equals(CodeField obj)
+		{
+			if (obj == null)
+			{
+				return false;
+			}
+
+			return Html == obj.Html && Css == obj.Css;
+		}
 	}
 }

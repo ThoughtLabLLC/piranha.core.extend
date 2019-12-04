@@ -1,6 +1,6 @@
 using Piranha.AttributeBuilder;
+using Piranha.Extend;
 using Piranha.Models;
-using PiranhaCMSTest.Models.Regions;
 using Thoughtlab.Piranha.Extend.Fields;
 
 namespace PiranhaCMSTest.Models

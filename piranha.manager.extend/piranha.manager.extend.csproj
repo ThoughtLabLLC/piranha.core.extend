@@ -5,17 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="assets\src\js\components\fields\code-field.js" />
-    <None Remove="assets\src\js\components\fields\color-field.js" />
-    <None Remove="assets\src\js\components\fields\heading-field.js" />
-    <None Remove="assets\src\js\components\fields\link-field.js" />
+    <EmbeddedResource Include="assets\dist\*.*" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="assets\src\js\components\fields\code-field.js" />
-    <EmbeddedResource Include="assets\src\js\components\fields\color-field.js" />
-    <EmbeddedResource Include="assets\src\js\components\fields\heading-field.js" />
-    <EmbeddedResource Include="assets\src\js\components\fields\link-field.js" />
+    <PackageReference Include="Piranha.Manager" Version="7.1.0" />
   </ItemGroup>
 
 </Project>

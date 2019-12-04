@@ -1,6 +1,7 @@
 using Piranha.AttributeBuilder;
 using Piranha.Models;
 using PiranhaCMSTest.Models.Regions;
+using Piranha.Extend;
 
 namespace PiranhaCMSTest.Models
 {

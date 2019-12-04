@@ -18,18 +18,18 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.6" />
-    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.6.3">
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.7.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Piranha" Version="7.0.3" />
-    <PackageReference Include="Piranha.AspNetCore" Version="7.0.0" />
-    <PackageReference Include="Piranha.AspNetCore.Identity.SQLite" Version="7.0.0" />
-    <PackageReference Include="Piranha.AttributeBuilder" Version="7.0.0" />
-    <PackageReference Include="Piranha.Data.EF" Version="7.0.1" />
-    <PackageReference Include="Piranha.ImageSharp" Version="7.0.0-rc1" />
-    <PackageReference Include="Piranha.Local.FileStorage" Version="7.0.0" />
-    <PackageReference Include="Piranha.Manager" Version="7.0.3" />
+    <PackageReference Include="Piranha" Version="7.1.0" />
+    <PackageReference Include="Piranha.AspNetCore" Version="7.1.0" />
+    <PackageReference Include="Piranha.AspNetCore.Identity.SQLite" Version="7.1.0" />
+    <PackageReference Include="Piranha.AttributeBuilder" Version="7.1.0" />
+    <PackageReference Include="Piranha.Data.EF" Version="7.1.0" />
+    <PackageReference Include="Piranha.ImageSharp" Version="7.1.0-rc1" />
+    <PackageReference Include="Piranha.Local.FileStorage" Version="7.1.0" />
+    <PackageReference Include="Piranha.Manager" Version="7.1.0" />
     <PackageReference Include="vue.TypeScript.DefinitelyTyped" Version="0.1.1" />
   </ItemGroup>
 
