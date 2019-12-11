@@ -19,6 +19,9 @@ namespace PiranhaCMSTest.Models
 		[Region(Display = RegionDisplayMode.Content)]
 		public HeadingField MyHeading { get; set; }
 
+		[Region(Display = RegionDisplayMode.Setting)]
+		public CodeField CodeBlock { get; set; }
+
 		//[Region(ListTitle = "Title")]
 		//public IList<Teaser> Teasers { get; set; }
 	}
